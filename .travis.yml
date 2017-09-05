@@ -5,6 +5,9 @@ language: bash
 services:
   - docker
 
+install:
+  - apt-get install tree -y
+
 script:
   - docker-compose run --rm php sh -c './build.php > build.sh'
   - cat build.sh
