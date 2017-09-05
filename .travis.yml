@@ -5,8 +5,11 @@ language: bash
 services:
   - docker
 
+before_install:
+  - sudo apt-get update -q
+
 install:
-  - apt-get install tree -y
+  - sudo apt-get install tree -y
 
 script:
   - docker-compose run --rm php sh -c './build.php > build.sh'
