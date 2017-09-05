@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+
+  php:
+    image: php:7.1
+    volumes:
+      - ./:/code
+    working_dir: /code
+    tty: true
+    command: bash
+
+  node:
+    image: node:8
+    volumes:
+      - ./:/code
+    working_dir: /code
+    tty: true
+    command: bash
