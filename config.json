@@ -10,5 +10,11 @@
     "version": "3.9.1",
     "dir": "/node_modules/raven-js/dist",
     "type": "npm"
+  },
+  {
+    "id": "raven-js",
+    "version": "3.17.0",
+    "dir": "/node_modules/raven-js/dist",
+    "type": "npm"
   }
 ]
