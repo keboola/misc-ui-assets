@@ -1,0 +1,26 @@
+sudo: required
+
+language: bash
+
+services:
+  - docker
+
+script:
+  - docker-compose run --rm php sh -c './build.php > build.sh'
+  - cat build.sh
+  - docker-compose run --rm node sh -c 'cat build.sh | sh'
+  - tree dist
+
+deploy:
+  - provider: s3
+    access_key_id: $AWS_ACCESS_KEY_ID
+    secret_access_key: $AWS_SECRET_ACCESS_KEY
+    bucket: misc-ui-assets
+    local-dir: dist
+    upload-dir: misc-ui
+    acl: public_read
+    skip_cleanup: true
+    cache_control: max-age=31536000
+    detect_encoding: true
+    on:
+      tags: true
