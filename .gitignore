@@ -3,3 +3,5 @@ node_modules
 /dist
 /build.sh
 /.env
+/package.json
+/yarn.lock

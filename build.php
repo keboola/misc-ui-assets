@@ -20,7 +20,7 @@ foreach ($config as $item) {
 
     $buildFile .= sprintf('mkdir -p %s%s', $installDir, $libraryDir) . "\n";
     $buildFile .= sprintf('cd %s%s', $installDir, $libraryDir) . "\n";
-    $buildFile .= sprintf('if [ -f package.json ]; then yarn; else yarn add %s@%s; fi', $item['id'], $item['version']) . "\n";
+    $buildFile .= sprintf('if [ -f package.json ]; then yarn; else echo "{}" > package.json && yarn add %s@%s; fi', $item['id'], $item['version']) . "\n";
 
     $buildFile .= sprintf('mkdir -p %s%s', $distDir, $libraryDir) . "\n";
     $buildFile .= sprintf('cp -R %s%s%s/* %s%s', $installDir, $libraryDir, $item['dir'], $distDir, $libraryDir) . "\n";
