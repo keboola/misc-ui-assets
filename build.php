@@ -24,6 +24,7 @@ foreach ($config as $item) {
 
     $buildFile .= sprintf('mkdir -p %s%s', $distDir, $libraryDir) . "\n";
     $buildFile .= sprintf('cp -R %s%s%s/* %s%s', $installDir, $libraryDir, $item['dir'], $distDir, $libraryDir) . "\n";
+    $buildFile .= "\n";
 }
 
 echo $buildFile;
