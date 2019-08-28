@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "u2f-api": "1.1.1"
+  }
+}
