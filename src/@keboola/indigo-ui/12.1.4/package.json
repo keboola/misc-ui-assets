@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@keboola/indigo-ui": "12.1.4"
+  }
+}
