@@ -12,6 +12,18 @@
     "type": "npm"
   },
   {
+    "id": "@sentry/browser",
+    "version": "5.15.4",
+    "dir": "/node_modules/@sentry/browser/build",
+    "type": "npm"
+  },
+  {
+    "id": "@sentry/integrations",
+    "version": "5.15.4",
+    "dir": "/node_modules/@sentry/integrations/build",
+    "type": "npm"
+  },
+  {
     "id": "u2f-api",
     "version": "1.1.1",
     "dir": "/node_modules/u2f-api",
