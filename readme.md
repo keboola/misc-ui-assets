@@ -1,6 +1,6 @@
 # Misc UI Assets
 
-[![Build Status](https://travis-ci.org/keboola/misc-ui-assets.svg?branch=master)](https://travis-ci.org/keboola/misc-ui-assets)
+[![Build Status](https://travis-ci.com/keboola/misc-ui-assets.svg?branch=master)](https://travis-ci.com/keboola/misc-ui-assets)
 
 Assets definition and few helper scripts.
 
