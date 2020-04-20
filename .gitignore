@@ -6,3 +6,5 @@ node_modules
 /package.json
 /yarn.lock
 yarn-error.log
+
+/src/@microsoft/onedrive-file-picker/7.2.0

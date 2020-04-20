@@ -34,5 +34,11 @@
     "version": "12.1.4",
     "dir": "/node_modules/@keboola/indigo-ui/lib",
     "type": "npm"
+  },
+  {
+    "id": "@microsoft/onedrive-file-picker",
+    "version": "7.2.0",
+    "type": "http",
+    "url": "https://js.live.net/v7.2/OneDrive.js"
   }
 ]
