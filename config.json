@@ -13,13 +13,13 @@
   },
   {
     "id": "@sentry/browser",
-    "version": "5.15.4",
+    "version": "5.29.1",
     "dir": "/node_modules/@sentry/browser/build",
     "type": "npm"
   },
   {
     "id": "@sentry/integrations",
-    "version": "5.15.4",
+    "version": "5.29.1",
     "dir": "/node_modules/@sentry/integrations/build",
     "type": "npm"
   },
