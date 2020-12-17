@@ -12,6 +12,9 @@ Assets definition and few helper scripts.
 4. Run build script `docker-compose run --rm node sh -c 'cat build.sh | sh'`
 5. Commit changes
 
+### Deployment
+
+Tagged commit in master branch will trigger deploy.
 
 ## Sample items
 
