@@ -12,7 +12,7 @@ install:
   - sudo apt-get install tree -y
 
 script:
-  - docker-compose run --rm php sh -c './build.php > build.sh'
+  - docker-compose run --rm -e DIST_VERSION=$(git describe --tags --always --long) php sh -c './build.php > build.sh'
   - cat build.sh
   - docker-compose run --rm node sh -c 'cat build.sh | sh'
   - tree dist
