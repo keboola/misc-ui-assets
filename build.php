@@ -1,11 +1,16 @@
 #!/usr/bin/env php
 <?php
 
+$version = getenv('DIST_VERSION');
+if ($version === false) {
+    trigger_error('Please specify DIST_VERSION', E_USER_ERROR);
+}
+
 $configFile = __DIR__ . '/config.json';
 $json = file_get_contents($configFile);
 $config = json_decode($json, true);
 
-$distDir = __DIR__ . '/dist';
+$distDir = __DIR__ . '/dist/' . $version;
 $installDir = __DIR__ . '/src';
 
 $buildFile = <<<BASH
