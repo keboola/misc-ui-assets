@@ -1,5 +1,0 @@
-{
-  "dependencies": {
-    "@sentry/integrations": "5.29.1"
-  }
-}

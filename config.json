@@ -7,19 +7,13 @@
   },
   {
     "id": "@sentry/browser",
-    "version": "4.6.4",
-    "dir": "/node_modules/@sentry/browser/build",
-    "type": "npm"
-  },
-  {
-    "id": "@sentry/browser",
-    "version": "5.29.1",
+    "version": "6.3.6",
     "dir": "/node_modules/@sentry/browser/build",
     "type": "npm"
   },
   {
     "id": "@sentry/integrations",
-    "version": "5.29.1",
+    "version": "6.3.6",
     "dir": "/node_modules/@sentry/integrations/build",
     "type": "npm"
   },
