@@ -12,7 +12,7 @@ services:
     command: bash
 
   node:
-    image: node:8
+    image: node:14
     volumes:
       - ./:/code
     working_dir: /code
