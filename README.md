@@ -6,11 +6,13 @@ Assets definition and few helper scripts.
 
 ## Usage
 
-1. Modify `config.json` file
-2. Generate build script `docker-compose run --rm php sh -c './build.php > build.sh'`
-3. Check build script (`cat build.sh`)
-4. Run build script `docker-compose run --rm node sh -c 'cat build.sh | sh'`
-5. Commit changes
+- Modify `config.json` file
+- Generate build script: `docker-compose run --rm -e DIST_VERSION=$(git describe --tags --always --long) php sh -c './build.php > build.sh'`
+   - During development just pass `-e DIST_VERSION=dev` or something similar
+- Check build script: `cat build.sh`
+- Run build script: `docker-compose run --rm node sh -c 'cat build.sh | sh'`
+- Check content of `dist` folder: `tree dist`
+- Commit changes (usually changes to `config.json` and files in `src` folder)
 
 ### Deployment
 

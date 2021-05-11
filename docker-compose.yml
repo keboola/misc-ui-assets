@@ -3,15 +3,16 @@ version: "3"
 services:
 
   php:
-    image: php:7.1
+    image: php:7.2
     volumes:
       - ./:/code
+      - ./php.ini:/usr/local/etc/php/php.ini
     working_dir: /code
     tty: true
     command: bash
 
   node:
-    image: node:8
+    image: node:14
     volumes:
       - ./:/code
     working_dir: /code
